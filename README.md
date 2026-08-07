@@ -2,6 +2,9 @@
 
 TourBox `.tb` 预设归档。按**应用**和**版本**存放，可随使用习惯迭代更新。
 
+- 介绍页：https://nzleo.github.io/LeoTourBoxShare/
+- 官方下载：[TourBox Preset](https://www.tourboxtech.com/oap/presets/?presetShareId=1282502239801446400)
+
 ## 目录结构
 
 ```text
@@ -9,7 +12,8 @@ presets/
   <应用名>/
     <版本号>/
       *.tb
-      README.md   # 该版本说明（可选）
+      README.md
+docs/          # GitHub Pages 介绍页
 ```
 
 ## 当前预设
@@ -23,8 +27,6 @@ presets/
 1. 进入对应应用目录，下载目标版本的 `.tb` 文件  
 2. 打开 TourBox Console → 预设列表 → 导入  
 3. 按自己的快捷键与手感微调  
-
-也可直接从 TourBox 官方预设页下载已审核版本。
 
 ## 版本约定
 

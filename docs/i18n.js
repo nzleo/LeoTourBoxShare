@@ -1,0 +1,293 @@
+const I18N = {
+  zh: {
+    "meta.title": "TourBox × ChatGPT / Codex 键位预设",
+    "meta.description": "面向 ChatGPT / Codex 的 TourBox 键位分享：一手控制模型、推理强度、活跃任务、审批与微信输入法全局语音。",
+    "nav.keys": "键位",
+    "nav.voice": "语音键",
+    "nav.tune": "微调",
+    "nav.download": "下载预设",
+    "hero.eyebrow": "官方已审核发布",
+    "hero.lede": "把模型切换、推理强度、活跃任务、审批和语音输入收进左手，让 Codex 操作不断档。",
+    "hero.ctaOfficial": "前往 TourBox 官方下载",
+    "hero.ctaFile": "直接下载 .tb 文件",
+    "hero.meta": "适用于 macOS ChatGPT 桌面端 / Codex · 导入后可按个人快捷键微调",
+    "hero.imgAlt": "TourBox Console 键位配置截图",
+    "purpose.title": "这套预设在解决什么",
+    "purpose.desc": "ChatGPT / Codex 高频操作太散：切模型、调推理、管多任务、点审批、再唤起语音。TourBox 把它们收成一套手感。",
+    "purpose.aTitle": "旋钮管任务",
+    "purpose.aDesc": "在活跃任务间快速切换，不必在侧边栏里点来点去。",
+    "purpose.bTitle": "滚轮调推理",
+    "purpose.bDesc": "按住侧键滚滚轮，提高或降低推理强度，边聊边调。",
+    "purpose.cTitle": "按键做决策",
+    "purpose.cDesc": "YES / Approve 与 NO / Decline 就在拇指区，审批不停手。",
+    "purpose.dTitle": "一键进场景",
+    "purpose.dDesc": "Tour / C1 / C2 分别打开 Codex、ChatGPT、Work 新对话。",
+    "keys.title": "每个键干什么",
+    "keys.desc": "对应 TourBox Console 中的主要映射。导入后也可打开 Guide / HUD 对照实体键位。",
+    "keys.rotating": "旋转区",
+    "keys.knob": "旋钮",
+    "keys.knobDesc": "下一个活跃任务 / 上一个活跃任务",
+    "keys.scroll": "滚轮",
+    "keys.scrollDesc": "鼠标滚轮上滚 / 下滚",
+    "keys.sideScroll": "侧键 + 滚轮",
+    "keys.sideScrollDesc": "提高 / 降低推理强度",
+    "keys.prime": "Prime Four · 核心按键",
+    "keys.top": "左上横键",
+    "keys.topDescHtml": "唤起<strong>微信输入法语音输入</strong>（强烈建议做成全局）",
+    "keys.tall": "高键",
+    "keys.short": "矮键",
+    "keys.kit": "Kit · 场景切换",
+    "keys.tourDesc": "切换到 Codex 新对话",
+    "keys.c1Desc": "切换到 ChatGPT 新对话",
+    "keys.c2Desc": "切换到 ChatGPT Work 新聊天",
+    "keys.other": "其它已配置动作",
+    "keys.otherA": "切换模型",
+    "keys.otherB": "新建对话",
+    "keys.otherC": "下一个 / 上一个活跃 Agent",
+    "keys.otherD": "切换活动任务",
+    "keys.note": "这些动作已写进预设；导入后在 Console Guide 里可对照。",
+    "voice.eyebrow": "重点推荐",
+    "voice.title": "为什么左上横键要做成「全局说话」",
+    "voice.p1": "ChatGPT / Codex 自带语音很强，但只在应用内生效。真正卡住节奏的，往往是你在别的窗口想到一句指令，还得切回 ChatGPT 再点麦克风。",
+    "voice.p2Html": "建议把 <strong>Top（左上横键）</strong> 改成 <strong>微信输入法语音</strong>，并设成<strong>全局快捷键</strong>。任意窗口按一下就能说，文字落入输入框后再交给 Codex。",
+    "voice.s1": "在微信输入法设置里确认语音快捷键。",
+    "voice.s2Html": "在 TourBox Console 选中本预设的 <strong>Top / 左上横键</strong>。",
+    "voice.s3": "映射成与微信输入法语音相同的快捷键。",
+    "voice.s4": "设为全局触发（或默认 / 全局预设），离开 ChatGPT 也能用。",
+    "voice.tip": "横键适合按住说话 / 点按唤起，位置固定，盲按不易误触。",
+    "voice.compareTitle": "默认 vs 推荐",
+    "voice.defaultLabel": "ChatGPT 内置语音",
+    "voice.defaultDesc": "适合在 App 里连续对话、指挥 Agent。",
+    "voice.recLabel": "微信输入法语音（推荐）",
+    "voice.recDesc": "适合全局口述，任何输入框都能落字。",
+    "voice.aside": "两者可并存：横键管全局说一句，需要全双工 Voice 时再进 ChatGPT。",
+    "tune.title": "如何导入与微调",
+    "tune.desc": "官方库已审核通过；下载后按自己的快捷键习惯改几下即可。",
+    "tune.1t": "下载预设",
+    "tune.1dHtml": "从 <a href=\"https://www.tourboxtech.com/oap/presets/?presetShareId=1282502239801446400\" target=\"_blank\" rel=\"noopener\">TourBox 官方分享页</a> 或本页 <code>.tb</code> 下载。",
+    "tune.2t": "导入 Console",
+    "tune.2d": "TourBox Console → 预设列表 → 导入，绑定到 ChatGPT。",
+    "tune.3t": "核对快捷键",
+    "tune.3d": "若你改过 ChatGPT / Codex 快捷键，在对应按键上对齐。",
+    "tune.4t": "按手感重排",
+    "tune.4d": "YES / NO 可对调；左上横键建议保留给全局语音。",
+    "tune.5t": "打开 HUD（可选）",
+    "tune.5d": "初学打开 HUD，熟悉后即可盲操。",
+    "download.title": "下载并开始用",
+    "download.desc": "ChatGPT / Codex —— 集中控制模型、推理强度、活跃任务、审批和语音输入。",
+    "download.ctaOfficial": "TourBox 官方预设页",
+    "download.ctaFile": "下载 ChatGPT_Codex.tb",
+    "download.meta": "版本 1.0.0 · 2026/08/07 · 已通过 TourBox 官方审核",
+    "footer.copy": "TourBox 是 TourBox Tech Inc. 的产品商标。本页为社区分享说明，非官方站点。"
+  },
+  en: {
+    "meta.title": "TourBox × ChatGPT / Codex Preset",
+    "meta.description": "A TourBox preset for ChatGPT / Codex: models, reasoning, active tasks, approvals, and global WeChat IME voice.",
+    "nav.keys": "Keys",
+    "nav.voice": "Voice key",
+    "nav.tune": "Tune",
+    "nav.download": "Download",
+    "hero.eyebrow": "Officially approved & published",
+    "hero.lede": "Keep model switching, reasoning effort, active tasks, approvals, and voice under your left hand — so Codex never loses momentum.",
+    "hero.ctaOfficial": "Download on TourBox",
+    "hero.ctaFile": "Download .tb file",
+    "hero.meta": "For macOS ChatGPT desktop / Codex · Tweak shortcuts after import",
+    "hero.imgAlt": "TourBox Console keymap screenshot",
+    "purpose.title": "What this preset solves",
+    "purpose.desc": "ChatGPT / Codex actions are scattered. TourBox gathers them into one hand feel.",
+    "purpose.aTitle": "Knob for tasks",
+    "purpose.aDesc": "Jump between active tasks without hunting the sidebar.",
+    "purpose.bTitle": "Scroll for reasoning",
+    "purpose.bDesc": "Hold Side and scroll to raise or lower reasoning effort.",
+    "purpose.cTitle": "Buttons for decisions",
+    "purpose.cDesc": "YES / Approve and NO / Decline sit under your thumb.",
+    "purpose.dTitle": "One-tap scenes",
+    "purpose.dDesc": "Tour / C1 / C2 open Codex, ChatGPT, and Work new chats.",
+    "keys.title": "What each key does",
+    "keys.desc": "Main mappings in TourBox Console. After import, use Guide / HUD.",
+    "keys.rotating": "Rotating section",
+    "keys.knob": "Knob",
+    "keys.knobDesc": "Next / previous active task",
+    "keys.scroll": "Scroll",
+    "keys.scrollDesc": "Mouse wheel up / down",
+    "keys.sideScroll": "Side + Scroll",
+    "keys.sideScrollDesc": "Increase / decrease reasoning effort",
+    "keys.prime": "Prime Four · core keys",
+    "keys.top": "Top (upper-left bar)",
+    "keys.topDescHtml": "Trigger <strong>WeChat IME voice</strong> (recommended as global)",
+    "keys.tall": "Tall",
+    "keys.short": "Short",
+    "keys.kit": "Kit · scene switch",
+    "keys.tourDesc": "Switch to Codex new chat",
+    "keys.c1Desc": "Switch to ChatGPT new chat",
+    "keys.c2Desc": "Switch to ChatGPT Work new chat",
+    "keys.other": "Other mapped actions",
+    "keys.otherA": "Switch model",
+    "keys.otherB": "New conversation",
+    "keys.otherC": "Next / previous active Agent",
+    "keys.otherD": "Switch active task",
+    "keys.note": "Already in the preset — check Console Guide after import.",
+    "voice.eyebrow": "Key tip",
+    "voice.title": "Why make the Top key global talk",
+    "voice.p1": "Built-in voice is strong but app-bound. The friction is jumping back to ChatGPT just to hit the mic.",
+    "voice.p2Html": "Remap <strong>Top</strong> to <strong>WeChat IME voice</strong> as a <strong>global shortcut</strong>. Speak from any window, then hand text to Codex.",
+    "voice.s1": "Confirm the WeChat IME voice shortcut.",
+    "voice.s2Html": "In Console, select <strong>Top / upper-left bar</strong>.",
+    "voice.s3": "Map it to the same WeChat IME voice shortcut.",
+    "voice.s4": "Allow global trigger (or default / global preset).",
+    "voice.tip": "The bar key is ideal for hold-to-talk / tap-to-wake.",
+    "voice.compareTitle": "Default vs recommended",
+    "voice.defaultLabel": "ChatGPT built-in voice",
+    "voice.defaultDesc": "Best for continuous in-app talk.",
+    "voice.recLabel": "WeChat IME voice (recommended)",
+    "voice.recDesc": "Best for global dictation into any field.",
+    "voice.aside": "Keep both if you like: Top for a quick global line.",
+    "tune.title": "Import & fine-tune",
+    "tune.desc": "Approved in the official library. Nudge shortcuts to match your setup.",
+    "tune.1t": "Download",
+    "tune.1dHtml": "From the <a href=\"https://www.tourboxtech.com/oap/presets/?presetShareId=1282502239801446400\" target=\"_blank\" rel=\"noopener\">official share page</a> or this page’s <code>.tb</code>.",
+    "tune.2t": "Import",
+    "tune.2d": "TourBox Console → Preset list → Import, bind to ChatGPT.",
+    "tune.3t": "Align shortcuts",
+    "tune.3d": "Rematch keys if you customized ChatGPT / Codex shortcuts.",
+    "tune.4t": "Rearrange by feel",
+    "tune.4d": "Swap YES / NO if needed. Keep Top for global voice.",
+    "tune.5t": "HUD (optional)",
+    "tune.5d": "Use HUD while learning, then go muscle-memory.",
+    "download.title": "Download and go",
+    "download.desc": "ChatGPT / Codex — models, reasoning, active tasks, approvals, and voice.",
+    "download.ctaOfficial": "TourBox official preset page",
+    "download.ctaFile": "Download ChatGPT_Codex.tb",
+    "download.meta": "v1.0.0 · 2026/08/07 · Approved by TourBox",
+    "footer.copy": "TourBox is a trademark of TourBox Tech Inc. Community guide, not an official site."
+  },
+  ja: {
+    "meta.title": "TourBox × ChatGPT / Codex プリセット",
+    "meta.description": "ChatGPT / Codex 向け TourBox プリセット。モデル・推論・タスク・承認・WeChat IME グローバル音声。",
+    "nav.keys": "キー配置",
+    "nav.voice": "音声キー",
+    "nav.tune": "調整",
+    "nav.download": "ダウンロード",
+    "hero.eyebrow": "公式審査通過・公開済み",
+    "hero.lede": "モデル切替・推論強度・アクティブタスク・承認・音声入力を左手に集約し、Codex の操作を途切れさせない。",
+    "hero.ctaOfficial": "TourBox 公式から入手",
+    "hero.ctaFile": ".tb を直接ダウンロード",
+    "hero.meta": "macOS ChatGPT / Codex 向け · 取り込み後に微調整可",
+    "hero.imgAlt": "TourBox Console のキー配置スクリーンショット",
+    "purpose.title": "このプリセットが解くこと",
+    "purpose.desc": "頻出操作を TourBox で一手の感触にまとめる。",
+    "purpose.aTitle": "ノブでタスク",
+    "purpose.aDesc": "アクティブタスクを素早く切替。",
+    "purpose.bTitle": "スクロールで推論",
+    "purpose.bDesc": "Side 押しながら推論強度を上下。",
+    "purpose.cTitle": "ボタンで判断",
+    "purpose.cDesc": "YES / NO を親指ゾーンに配置。",
+    "purpose.dTitle": "ワンタップで場面",
+    "purpose.dDesc": "Tour / C1 / C2 で Codex・ChatGPT・Work へ。",
+    "keys.title": "各キーの役割",
+    "keys.desc": "TourBox Console の主なマッピング。Guide / HUD でも確認可。",
+    "keys.rotating": "回転セクション",
+    "keys.knob": "ノブ",
+    "keys.knobDesc": "次 / 前のアクティブタスク",
+    "keys.scroll": "スクロール",
+    "keys.scrollDesc": "マウスホイール上下",
+    "keys.sideScroll": "Side + Scroll",
+    "keys.sideScrollDesc": "推論強度を上げる / 下げる",
+    "keys.prime": "Prime Four · コアキー",
+    "keys.top": "左上の横キー（Top）",
+    "keys.topDescHtml": "<strong>WeChat 入力メソッド音声</strong>を起動（グローバル推奨）",
+    "keys.tall": "Tall",
+    "keys.short": "Short",
+    "keys.kit": "Kit · シーン切替",
+    "keys.tourDesc": "Codex 新規チャットへ",
+    "keys.c1Desc": "ChatGPT 新規チャットへ",
+    "keys.c2Desc": "ChatGPT Work 新規チャットへ",
+    "keys.other": "その他の割り当て",
+    "keys.otherA": "モデル切替",
+    "keys.otherB": "新規会話",
+    "keys.otherC": "次 / 前のアクティブ Agent",
+    "keys.otherD": "アクティブタスク切替",
+    "keys.note": "プリセットに含まれます。Console Guide で確認。",
+    "voice.eyebrow": "おすすめ",
+    "voice.title": "なぜ左上横キーをグローバル発話にするか",
+    "voice.p1": "内蔵音声はアプリ内限定。他ウィンドウで思いついた指示のために ChatGPT へ戻るのが本当のロス。",
+    "voice.p2Html": "<strong>Top</strong> を <strong>WeChat 入力メソッド音声</strong>の<strong>グローバルショートカット</strong>に。どの窓からでも話し、Codex へ渡せる。",
+    "voice.s1": "WeChat 入力メソッドで音声ショートカットを確認。",
+    "voice.s2Html": "Console で <strong>Top / 左上横キー</strong>を選択。",
+    "voice.s3": "同じショートカットへマッピング。",
+    "voice.s4": "グローバル発火を許可（またはデフォルト設定）。",
+    "voice.tip": "横キーは押し話し / タップ起動に向く。",
+    "voice.compareTitle": "デフォルト vs 推奨",
+    "voice.defaultLabel": "ChatGPT 内蔵音声",
+    "voice.defaultDesc": "アプリ内の連続対話向き。",
+    "voice.recLabel": "WeChat 入力メソッド音声（推奨）",
+    "voice.recDesc": "どの入力欄にも落とせるグローバル口述向き。",
+    "voice.aside": "併用可：横キーで一言、全二重 Voice は ChatGPT で。",
+    "tune.title": "取り込みと微調整",
+    "tune.desc": "公式審査済み。自分のショートカットに合わせて少し直す。",
+    "tune.1t": "ダウンロード",
+    "tune.1dHtml": "<a href=\"https://www.tourboxtech.com/oap/presets/?presetShareId=1282502239801446400\" target=\"_blank\" rel=\"noopener\">公式シェアページ</a>または本ページの <code>.tb</code>。",
+    "tune.2t": "インポート",
+    "tune.2d": "Console → プリセット一覧 → インポート、ChatGPT に紐づけ。",
+    "tune.3t": "ショートカット合わせ",
+    "tune.3d": "自分で変えているキーがあれば合わせる。",
+    "tune.4t": "感触で並べ替え",
+    "tune.4d": "YES / NO 入れ替え可。左上横キーはグローバル音声に。",
+    "tune.5t": "HUD（任意）",
+    "tune.5d": "慣れ初めは HUD、その後はブラインド操作。",
+    "download.title": "ダウンロードして開始",
+    "download.desc": "ChatGPT / Codex — モデル・推論・タスク・承認・音声。",
+    "download.ctaOfficial": "TourBox 公式プリセット",
+    "download.ctaFile": "ChatGPT_Codex.tb をダウンロード",
+    "download.meta": "v1.0.0 · 2026/08/07 · 公式審査通過",
+    "footer.copy": "TourBox は TourBox Tech Inc. の商標です。本ページはコミュニティ解説です。"
+  }
+};
+
+const LANGS = ["zh", "en", "ja"];
+const LANG_ATTR = { zh: "zh-CN", en: "en", ja: "ja" };
+
+function detectLang() {
+  const q = new URLSearchParams(location.search).get("lang");
+  if (LANGS.includes(q)) return q;
+  const saved = localStorage.getItem("tbshare-lang");
+  if (LANGS.includes(saved)) return saved;
+  const nav = (navigator.language || "zh").toLowerCase();
+  if (nav.startsWith("ja")) return "ja";
+  if (nav.startsWith("en")) return "en";
+  return "zh";
+}
+
+function applyLang(lang) {
+  const dict = I18N[lang] || I18N.zh;
+  document.documentElement.lang = LANG_ATTR[lang];
+  document.title = dict["meta.title"];
+  const meta = document.querySelector('meta[name="description"]');
+  if (meta) meta.setAttribute("content", dict["meta.description"]);
+  document.querySelectorAll("[data-i18n]").forEach((el) => {
+    const key = el.getAttribute("data-i18n");
+    if (dict[key] != null) el.textContent = dict[key];
+  });
+  document.querySelectorAll("[data-i18n-html]").forEach((el) => {
+    const key = el.getAttribute("data-i18n-html");
+    if (dict[key] != null) el.innerHTML = dict[key];
+  });
+  document.querySelectorAll("[data-i18n-alt]").forEach((el) => {
+    const key = el.getAttribute("data-i18n-alt");
+    if (dict[key] != null) el.setAttribute("alt", dict[key]);
+  });
+  document.querySelectorAll(".lang-switch button").forEach((btn) => {
+    btn.setAttribute("aria-pressed", btn.dataset.lang === lang ? "true" : "false");
+  });
+  localStorage.setItem("tbshare-lang", lang);
+  const url = new URL(location.href);
+  url.searchParams.set("lang", lang);
+  history.replaceState(null, "", url);
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+  applyLang(detectLang());
+  document.querySelectorAll(".lang-switch button").forEach((btn) => {
+    btn.addEventListener("click", () => applyLang(btn.dataset.lang));
+  });
+});
