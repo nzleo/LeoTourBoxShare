@@ -1,6 +1,6 @@
 # TourBox × ChatGPT / Codex 键位分享
 
-面向 ChatGPT / Codex 的 TourBox 高效工作流预设说明页。已通过 TourBox 官方审核。
+面向 ChatGPT / Codex 的 TourBox 键位预设说明页（中 / EN / 日）。已通过 TourBox 官方审核。
 
 - 介绍页：[GitHub Pages](https://nzleo.github.io/LeoTourBoxShare/)
 - 官方下载：[TourBox Preset](https://www.tourboxtech.com/oap/presets/?presetShareId=1282502239801446400)
@@ -16,4 +16,4 @@
 python3 -m http.server 8080
 ```
 
-打开 http://localhost:8080
+打开 http://localhost:8080/?lang=zh（或 `en` / `ja`）

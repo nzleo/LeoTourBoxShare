@@ -3,14 +3,14 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>TourBox × ChatGPT / Codex 高效工作流预设 · Leo Liu</title>
+  <title>TourBox × ChatGPT / Codex 键位预设</title>
   <meta name="description" content="面向 ChatGPT / Codex 的 TourBox 键位分享：一手控制模型、推理强度、活跃任务、审批与微信输入法全局语音。已通过 TourBox 官方审核。" />
-  <meta property="og:title" content="TourBox × ChatGPT / Codex 高效工作流预设" />
+  <meta property="og:title" content="TourBox × ChatGPT / Codex 键位预设" />
   <meta property="og:description" content="集中控制模型、推理强度、活跃任务、审批和语音输入。推荐把左上横键设为全局微信输入法语音。" />
   <meta property="og:image" content="assets/keymap.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&family=Syne:wght@700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;600;700&family=Sora:wght@400;500;600;700&family=Syne:wght@700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -20,130 +20,137 @@
 
   <header class="nav">
     <a class="nav-brand" href="#top">TourBox Share</a>
-    <nav class="nav-links">
-      <a href="#keys">键位</a>
-      <a href="#voice">语音键</a>
-      <a href="#tune">微调</a>
-      <a class="nav-cta" href="#download">下载预设</a>
-    </nav>
+    <div class="nav-right">
+      <nav class="nav-links">
+        <a href="#keys" data-i18n="nav.keys">键位</a>
+        <a href="#voice" data-i18n="nav.voice">语音键</a>
+        <a href="#tune" data-i18n="nav.tune">微调</a>
+        <a class="nav-cta" href="#download" data-i18n="nav.download">下载预设</a>
+      </nav>
+      <div class="lang-switch" role="group" aria-label="Language">
+        <button type="button" data-lang="zh" aria-pressed="true">中</button>
+        <button type="button" data-lang="en" aria-pressed="false">EN</button>
+        <button type="button" data-lang="ja" aria-pressed="false">日</button>
+      </div>
+    </div>
   </header>
 
   <main id="top">
     <section class="hero">
       <div class="hero-copy">
-        <p class="eyebrow">Leo Liu · 官方已审核发布</p>
+        <p class="eyebrow" data-i18n="hero.eyebrow">官方已审核发布</p>
         <h1 class="brand-title">TourBox × ChatGPT / Codex</h1>
-        <p class="lede">把模型切换、推理强度、活跃任务、审批和语音输入收进左手，让 Codex 工作流不停键盘。</p>
+        <p class="lede" data-i18n="hero.lede">把模型切换、推理强度、活跃任务、审批和语音输入收进左手，让 Codex 操作不断档。</p>
         <div class="cta-row">
-          <a class="btn btn-primary" href="https://www.tourboxtech.com/oap/presets/?presetShareId=1282502239801446400" target="_blank" rel="noopener">
+          <a class="btn btn-primary" href="https://www.tourboxtech.com/oap/presets/?presetShareId=1282502239801446400" target="_blank" rel="noopener" data-i18n="hero.ctaOfficial">
             前往 TourBox 官方下载
           </a>
-          <a class="btn btn-ghost" href="assets/ChatGPT_Codex.tb" download="ChatGPT_Codex.tb">直接下载 .tb 文件</a>
+          <a class="btn btn-ghost" href="assets/ChatGPT_Codex.tb" download="ChatGPT_Codex.tb" data-i18n="hero.ctaFile">直接下载 .tb 文件</a>
         </div>
-        <p class="meta">适用于 macOS ChatGPT 桌面端 / Codex · 导入后可按个人快捷键微调</p>
+        <p class="meta" data-i18n="hero.meta">适用于 macOS ChatGPT 桌面端 / Codex · 导入后可按个人快捷键微调</p>
       </div>
       <div class="hero-visual">
         <figure class="keymap-frame">
-          <img src="assets/keymap.png" alt="TourBox Console 中本预设的键位配置截图" width="634" height="572" />
+          <img src="assets/keymap.png" data-i18n-alt="hero.imgAlt" alt="TourBox Console 中本预设的键位配置截图" width="634" height="572" />
         </figure>
       </div>
     </section>
 
     <section class="section purpose" id="purpose">
       <div class="section-head">
-        <h2>这套预设在解决什么</h2>
-        <p>ChatGPT / Codex 高频操作太散：切模型、调推理、管多任务、点审批、再唤起语音。TourBox 把它们收成一套手感。</p>
+        <h2 data-i18n="purpose.title">这套预设在解决什么</h2>
+        <p data-i18n="purpose.desc">ChatGPT / Codex 高频操作太散：切模型、调推理、管多任务、点审批、再唤起语音。TourBox 把它们收成一套手感。</p>
       </div>
       <div class="pillars">
         <article>
-          <h3>旋钮管任务</h3>
-          <p>在活跃任务间快速切换，不必在侧边栏里点来点去。</p>
+          <h3 data-i18n="purpose.aTitle">旋钮管任务</h3>
+          <p data-i18n="purpose.aDesc">在活跃任务间快速切换，不必在侧边栏里点来点去。</p>
         </article>
         <article>
-          <h3>滚轮调推理</h3>
-          <p>按住侧键滚滚轮，提高或降低推理强度，边聊边调。</p>
+          <h3 data-i18n="purpose.bTitle">滚轮调推理</h3>
+          <p data-i18n="purpose.bDesc">按住侧键滚滚轮，提高或降低推理强度，边聊边调。</p>
         </article>
         <article>
-          <h3>按键做决策</h3>
-          <p>YES / Approve 与 NO / Decline 就在拇指区，审批不停手。</p>
+          <h3 data-i18n="purpose.cTitle">按键做决策</h3>
+          <p data-i18n="purpose.cDesc">YES / Approve 与 NO / Decline 就在拇指区，审批不停手。</p>
         </article>
         <article>
-          <h3>一键进场景</h3>
-          <p>Tour / C1 / C2 分别打开 Codex、ChatGPT、Work 新对话。</p>
+          <h3 data-i18n="purpose.dTitle">一键进场景</h3>
+          <p data-i18n="purpose.dDesc">Tour / C1 / C2 分别打开 Codex、ChatGPT、Work 新对话。</p>
         </article>
       </div>
     </section>
 
     <section class="section keys" id="keys">
       <div class="section-head">
-        <h2>每个键干什么</h2>
-        <p>以下对应本预设在 TourBox Console 中的主要映射。导入后也可打开 Guide / HUD 对照实体键位。</p>
+        <h2 data-i18n="keys.title">每个键干什么</h2>
+        <p data-i18n="keys.desc">以下对应本预设在 TourBox Console 中的主要映射。导入后也可打开 Guide / HUD 对照实体键位。</p>
       </div>
 
       <div class="key-groups">
         <div class="key-group">
-          <h3>旋转区</h3>
+          <h3 data-i18n="keys.rotating">旋转区</h3>
           <ul class="key-list">
             <li>
-              <div class="key-name"><span class="chip chip-knob">Knob</span>旋钮</div>
-              <div class="key-desc">下一个活跃任务 / 上一个活跃任务</div>
+              <div class="key-name"><span class="chip chip-knob">Knob</span><span data-i18n="keys.knob">旋钮</span></div>
+              <div class="key-desc" data-i18n="keys.knobDesc">下一个活跃任务 / 上一个活跃任务</div>
             </li>
             <li>
-              <div class="key-name"><span class="chip chip-scroll">Scroll</span>滚轮</div>
-              <div class="key-desc">鼠标滚轮上滚 / 下滚（页面与列表滚动）</div>
+              <div class="key-name"><span class="chip chip-scroll">Scroll</span><span data-i18n="keys.scroll">滚轮</span></div>
+              <div class="key-desc" data-i18n="keys.scrollDesc">鼠标滚轮上滚 / 下滚（页面与列表滚动）</div>
             </li>
             <li>
-              <div class="key-name"><span class="chip chip-combo">Side + Scroll</span>侧键 + 滚轮</div>
-              <div class="key-desc">提高推理强度 / 降低推理强度</div>
+              <div class="key-name"><span class="chip chip-combo">Side + Scroll</span><span data-i18n="keys.sideScroll">侧键 + 滚轮</span></div>
+              <div class="key-desc" data-i18n="keys.sideScrollDesc">提高推理强度 / 降低推理强度</div>
             </li>
           </ul>
         </div>
 
         <div class="key-group highlight-group">
-          <h3>Prime Four · 核心按键</h3>
+          <h3 data-i18n="keys.prime">Prime Four · 核心按键</h3>
           <ul class="key-list">
             <li class="featured">
-              <div class="key-name"><span class="chip chip-top">Top</span>左上横键</div>
-              <div class="key-desc">唤起<strong>微信输入法语音输入</strong>（强烈建议做成全局）</div>
+              <div class="key-name"><span class="chip chip-top">Top</span><span data-i18n="keys.top">左上横键</span></div>
+              <div class="key-desc" data-i18n-html="keys.topDescHtml">唤起<strong>微信输入法语音输入</strong>（强烈建议做成全局）</div>
             </li>
             <li>
-              <div class="key-name"><span class="chip">Tall</span>高键</div>
+              <div class="key-name"><span class="chip">Tall</span><span data-i18n="keys.tall">高键</span></div>
               <div class="key-desc">NO / Decline</div>
             </li>
             <li>
-              <div class="key-name"><span class="chip">Short</span>矮键</div>
+              <div class="key-name"><span class="chip">Short</span><span data-i18n="keys.short">矮键</span></div>
               <div class="key-desc">YES / Approve</div>
             </li>
           </ul>
         </div>
 
         <div class="key-group">
-          <h3>Kit · 场景切换</h3>
+          <h3 data-i18n="keys.kit">Kit · 场景切换</h3>
           <ul class="key-list">
             <li>
               <div class="key-name"><span class="chip chip-kit">Tour</span></div>
-              <div class="key-desc">切换到 Codex 新对话 / 新建对话</div>
+              <div class="key-desc" data-i18n="keys.tourDesc">切换到 Codex 新对话 / 新建对话</div>
             </li>
             <li>
               <div class="key-name"><span class="chip chip-kit">C1</span></div>
-              <div class="key-desc">切换到 ChatGPT 新对话 / 新建对话</div>
+              <div class="key-desc" data-i18n="keys.c1Desc">切换到 ChatGPT 新对话 / 新建对话</div>
             </li>
             <li>
               <div class="key-name"><span class="chip chip-kit">C2</span></div>
-              <div class="key-desc">切换到 ChatGPT Work 新聊天 / 新建对话</div>
+              <div class="key-desc" data-i18n="keys.c2Desc">切换到 ChatGPT Work 新聊天 / 新建对话</div>
             </li>
           </ul>
         </div>
 
         <div class="key-group">
-          <h3>其它已配置动作</h3>
+          <h3 data-i18n="keys.other">其它已配置动作</h3>
           <ul class="key-list compact">
-            <li><div class="key-desc">切换模型</div></li>
-            <li><div class="key-desc">新建对话</div></li>
-            <li><div class="key-desc">下一个 / 上一个活跃 Agent</div></li>
-            <li><div class="key-desc">切换活动任务</div></li>
+            <li><div class="key-desc" data-i18n="keys.otherA">切换模型</div></li>
+            <li><div class="key-desc" data-i18n="keys.otherB">新建对话</div></li>
+            <li><div class="key-desc" data-i18n="keys.otherC">下一个 / 上一个活跃 Agent</div></li>
+            <li><div class="key-desc" data-i18n="keys.otherD">切换活动任务</div></li>
           </ul>
-          <p class="note">这些动作已写进预设；具体落在 D-pad 或组合键上，导入后在 Console 的 Guide 里可一眼看清。</p>
+          <p class="note" data-i18n="keys.note">这些动作已写进预设；具体落在 D-pad 或组合键上，导入后在 Console 的 Guide 里可一眼看清。</p>
         </div>
       </div>
     </section>
@@ -151,101 +158,88 @@
     <section class="section voice" id="voice">
       <div class="voice-panel">
         <div class="voice-copy">
-          <p class="eyebrow">重点推荐</p>
-          <h2>为什么左上横键要做成「全局说话」</h2>
-          <p>
-            ChatGPT / Codex 自带语音很强，但只在应用内生效。真正卡住工作流的，往往是：你在浏览器、终端、文档、邮件里想到一句指令，还得切回 ChatGPT 再点麦克风。
+          <p class="eyebrow" data-i18n="voice.eyebrow">重点推荐</p>
+          <h2 data-i18n="voice.title">为什么左上横键要做成「全局说话」</h2>
+          <p data-i18n="voice.p1">
+            ChatGPT / Codex 自带语音很强，但只在应用内生效。真正卡住节奏的，往往是：你在浏览器、终端、文档、邮件里想到一句指令，还得切回 ChatGPT 再点麦克风。
           </p>
-          <p>
+          <p data-i18n-html="voice.p2Html">
             我建议把 <strong>Top（左上横键）</strong> 从「仅 ChatGPT 语音」改成 <strong>微信输入法的语音输入</strong>，并设成<strong>全局快捷键</strong>。这样无论当前焦点在哪个窗口，按一下就能说，说完文字直接落在输入框——再粘贴或发送给 Codex，比进 App 开 Voice 更轻。
           </p>
           <ol class="steps">
-            <li>打开「微信输入法」设置，确认语音输入的系统快捷键（或自定义一个）。</li>
-            <li>在 TourBox Console 里选中本预设的 <strong>Top / 左上横键</strong>。</li>
-            <li>把它映射成与微信输入法语音相同的快捷键（本预设已按此思路配置）。</li>
-            <li>在 Console 里把该动作设为可在全局触发（或把该预设设为默认 / 全局预设），这样离开 ChatGPT 窗口也能按。</li>
+            <li data-i18n="voice.s1">打开「微信输入法」设置，确认语音输入的系统快捷键（或自定义一个）。</li>
+            <li data-i18n-html="voice.s2Html">在 TourBox Console 里选中本预设的 <strong>Top / 左上横键</strong>。</li>
+            <li data-i18n="voice.s3">把它映射成与微信输入法语音相同的快捷键（本预设已按此思路配置）。</li>
+            <li data-i18n="voice.s4">在 Console 里把该动作设为可在全局触发（或把该预设设为默认 / 全局预设），这样离开 ChatGPT 窗口也能按。</li>
           </ol>
-          <p class="tip">手感建议：横键最适合「按住说话 / 点按唤起」——位置固定、盲按不易误触，比去找键盘组合键稳得多。</p>
+          <p class="tip" data-i18n="voice.tip">手感建议：横键最适合「按住说话 / 点按唤起」——位置固定、盲按不易误触，比去找键盘组合键稳得多。</p>
         </div>
         <aside class="voice-card">
-          <h3>默认 vs 推荐</h3>
+          <h3 data-i18n="voice.compareTitle">默认 vs 推荐</h3>
           <div class="compare">
             <div>
-              <span class="label">ChatGPT 内置语音</span>
-              <p>适合在 App 里连续对话、指挥 Agent。</p>
+              <span class="label" data-i18n="voice.defaultLabel">ChatGPT 内置语音</span>
+              <p data-i18n="voice.defaultDesc">适合在 App 里连续对话、指挥 Agent。</p>
             </div>
             <div class="recommended">
-              <span class="label">微信输入法语音（推荐）</span>
-              <p>适合全局口述指令，任何输入框都能落字，再丢给 Codex。</p>
+              <span class="label" data-i18n="voice.recLabel">微信输入法语音（推荐）</span>
+              <p data-i18n="voice.recDesc">适合全局口述指令，任何输入框都能落字，再丢给 Codex。</p>
             </div>
           </div>
-          <p class="aside-note">两者可以并存：横键管「全局说一句」，需要全双工 Voice 时再进 ChatGPT。</p>
+          <p class="aside-note" data-i18n="voice.aside">两者可以并存：横键管「全局说一句」，需要全双工 Voice 时再进 ChatGPT。</p>
         </aside>
       </div>
     </section>
 
     <section class="section tune" id="tune">
       <div class="section-head">
-        <h2>如何导入与微调</h2>
-        <p>官方库已审核通过；下载后按自己的 ChatGPT / Codex 版本和快捷键习惯改几下即可。</p>
+        <h2 data-i18n="tune.title">如何导入与微调</h2>
+        <p data-i18n="tune.desc">官方库已审核通过；下载后按自己的 ChatGPT / Codex 版本和快捷键习惯改几下即可。</p>
       </div>
       <ol class="howto">
         <li>
-          <strong>下载预设</strong>
-          <p>从 <a href="https://www.tourboxtech.com/oap/presets/?presetShareId=1282502239801446400" target="_blank" rel="noopener">TourBox 官方分享页</a> 下载，或直接使用本页的 <code>.tb</code> 文件。</p>
+          <strong data-i18n="tune.1t">下载预设</strong>
+          <p data-i18n-html="tune.1dHtml">从 <a href="https://www.tourboxtech.com/oap/presets/?presetShareId=1282502239801446400" target="_blank" rel="noopener">TourBox 官方分享页</a> 下载，或直接使用本页的 <code>.tb</code> 文件。</p>
         </li>
         <li>
-          <strong>导入 Console</strong>
-          <p>打开 TourBox Console → 预设列表 → 导入，选择下载的文件，绑定到 ChatGPT 应用。</p>
+          <strong data-i18n="tune.2t">导入 Console</strong>
+          <p data-i18n="tune.2d">打开 TourBox Console → 预设列表 → 导入，选择下载的文件，绑定到 ChatGPT 应用。</p>
         </li>
         <li>
-          <strong>核对快捷键</strong>
-          <p>若你改过 ChatGPT / Codex 的快捷键（模型、推理、审批、新建对话等），在对应按键上改成与你系统一致的组合键。</p>
+          <strong data-i18n="tune.3t">核对快捷键</strong>
+          <p data-i18n="tune.3d">若你改过 ChatGPT / Codex 的快捷键（模型、推理、审批、新建对话等），在对应按键上改成与你系统一致的组合键。</p>
         </li>
         <li>
-          <strong>按手感重排</strong>
-          <p>YES / NO 可对调；推理强度若更想用旋钮，把 Side+Scroll 的映射换过去即可。左上横键建议保留给全局语音。</p>
+          <strong data-i18n="tune.4t">按手感重排</strong>
+          <p data-i18n="tune.4d">YES / NO 可对调；推理强度若更想用旋钮，把 Side+Scroll 的映射换过去即可。左上横键建议保留给全局语音。</p>
         </li>
         <li>
-          <strong>打开 HUD（可选）</strong>
-          <p>初学阶段打开 TourBox HUD，按键时浮层提示功能名，一周后就能盲操。</p>
+          <strong data-i18n="tune.5t">打开 HUD（可选）</strong>
+          <p data-i18n="tune.5d">初学阶段打开 TourBox HUD，按键时浮层提示功能名，一周后就能盲操。</p>
         </li>
       </ol>
     </section>
 
     <section class="section download" id="download">
       <div class="download-panel">
-        <h2>下载并开始用</h2>
-        <p>预设名称：面向 ChatGPT/Codex 的高效工作流预设：集中控制模型、推理强度、活跃任务、审批和语音输入。</p>
+        <h2 data-i18n="download.title">下载并开始用</h2>
+        <p data-i18n="download.desc">预设名称：面向 ChatGPT/Codex —— 集中控制模型、推理强度、活跃任务、审批和语音输入。</p>
         <div class="cta-row">
-          <a class="btn btn-primary" href="https://www.tourboxtech.com/oap/presets/?presetShareId=1282502239801446400" target="_blank" rel="noopener">
+          <a class="btn btn-primary" href="https://www.tourboxtech.com/oap/presets/?presetShareId=1282502239801446400" target="_blank" rel="noopener" data-i18n="download.ctaOfficial">
             TourBox 官方预设页
           </a>
-          <a class="btn btn-ghost" href="assets/ChatGPT_Codex.tb" download="ChatGPT_Codex.tb">下载 ChatGPT_Codex.tb</a>
+          <a class="btn btn-ghost" href="assets/ChatGPT_Codex.tb" download="ChatGPT_Codex.tb" data-i18n="download.ctaFile">下载 ChatGPT_Codex.tb</a>
         </div>
-        <p class="meta">作者 Leo Liu · 发布时间 2026/08/07 · 已通过 TourBox 官方审核</p>
+        <p class="meta" data-i18n="download.meta">发布时间 2026/08/07 · 已通过 TourBox 官方审核</p>
       </div>
     </section>
   </main>
 
   <footer class="footer">
-    <p>TourBox 是 TourBox Tech Inc. 的产品商标。本页为社区分享说明，非官方站点。</p>
+    <p data-i18n="footer.copy">TourBox 是 TourBox Tech Inc. 的产品商标。本页为社区分享说明，非官方站点。</p>
     <p><a href="https://github.com/nzleo/LeoTourBoxShare">GitHub</a></p>
   </footer>
 
-  <script>
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) entry.target.classList.add("in");
-        });
-      },
-      { threshold: 0.12 }
-    );
-    document.querySelectorAll(".section, .hero-copy, .hero-visual, .voice-card").forEach((el) => {
-      el.classList.add("reveal");
-      observer.observe(el);
-    });
-  </script>
+  <script src="i18n.js"></script>
 </body>
 </html>

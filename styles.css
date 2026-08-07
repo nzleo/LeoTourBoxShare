@@ -13,8 +13,9 @@
   --kit: #1d6b4f;
   --shadow: 0 24px 60px rgba(20, 32, 28, 0.1);
   --radius: 18px;
-  --font-display: "Syne", sans-serif;
-  --font-body: "Sora", sans-serif;
+  --font-latin-display: "Syne", sans-serif;
+  --font-cjk: "Noto Sans SC", "Noto Sans JP", "PingFang SC", "Hiragino Sans", sans-serif;
+  --font-body: "Sora", "Noto Sans SC", "Noto Sans JP", "PingFang SC", sans-serif;
 }
 
 *,
@@ -32,13 +33,25 @@ body {
   color: var(--ink);
   font-family: var(--font-body);
   font-size: 16px;
-  line-height: 1.65;
+  line-height: 1.7;
+  font-feature-settings: "palt" 1;
+  letter-spacing: 0.01em;
   background:
     radial-gradient(ellipse 80% 50% at 10% -10%, rgba(217, 72, 15, 0.14), transparent 55%),
     radial-gradient(ellipse 70% 45% at 95% 5%, rgba(15, 118, 110, 0.12), transparent 50%),
     linear-gradient(180deg, var(--bg) 0%, var(--bg-deep) 100%);
   min-height: 100vh;
   overflow-x: hidden;
+}
+
+html[lang="ja"] body {
+  font-family: "Sora", "Noto Sans JP", "Hiragino Sans", sans-serif;
+  line-height: 1.75;
+}
+
+html[lang="en"] body {
+  letter-spacing: 0;
+  line-height: 1.65;
 }
 
 .noise {
@@ -99,12 +112,20 @@ main,
 }
 
 .nav-brand {
-  font-family: var(--font-display);
+  font-family: var(--font-latin-display);
   font-weight: 800;
   letter-spacing: -0.03em;
   color: var(--ink);
   text-decoration: none;
   font-size: 1.05rem;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: flex-end;
 }
 
 .nav-links {
@@ -137,6 +158,40 @@ main,
   color: #fff !important;
 }
 
+.lang-switch {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.22rem;
+  border-radius: 999px;
+  background: rgba(255, 253, 248, 0.75);
+  border: 1px solid var(--line);
+  gap: 0.15rem;
+}
+
+.lang-switch button {
+  appearance: none;
+  border: 0;
+  background: transparent;
+  color: var(--muted);
+  font: inherit;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  padding: 0.4rem 0.55rem;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.lang-switch button:hover {
+  color: var(--ink);
+}
+
+.lang-switch button[aria-pressed="true"] {
+  background: var(--ink);
+  color: #fff8f0;
+}
+
 .hero {
   max-width: 1120px;
   margin: 0 auto;
@@ -149,29 +204,39 @@ main,
 }
 
 .eyebrow {
-  margin: 0 0 0.75rem;
-  font-size: 0.82rem;
+  margin: 0 0 0.85rem;
+  font-family: var(--font-cjk);
+  font-size: 0.88rem;
   font-weight: 600;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
+  letter-spacing: 0.04em;
   color: var(--teal);
 }
 
 .brand-title {
   margin: 0;
-  font-family: var(--font-display);
+  font-family: var(--font-latin-display);
   font-weight: 800;
-  font-size: clamp(2.4rem, 5.5vw, 4.2rem);
-  line-height: 1.02;
-  letter-spacing: -0.045em;
+  font-size: clamp(2.35rem, 5.2vw, 4rem);
+  line-height: 1.05;
+  letter-spacing: -0.04em;
   color: var(--ink);
 }
 
 .lede {
-  margin: 1.15rem 0 1.75rem;
+  margin: 1.25rem 0 1.75rem;
   max-width: 34rem;
-  font-size: 1.08rem;
+  font-family: var(--font-cjk);
+  font-size: clamp(1.02rem, 1.6vw, 1.18rem);
+  font-weight: 500;
+  line-height: 1.75;
+  letter-spacing: 0.02em;
   color: var(--ink-soft);
+}
+
+html[lang="en"] .lede {
+  font-family: var(--font-body);
+  letter-spacing: 0;
+  line-height: 1.6;
 }
 
 .cta-row {
@@ -220,6 +285,7 @@ main,
   margin: 1.1rem 0 0;
   font-size: 0.85rem;
   color: var(--muted);
+  font-family: var(--font-cjk);
 }
 
 .hero-visual {
@@ -260,8 +326,17 @@ main,
 .voice-copy h2,
 .download-panel h2 {
   margin: 0 0 0.75rem;
-  font-family: var(--font-display);
-  font-size: clamp(1.8rem, 3.2vw, 2.6rem);
+  font-family: var(--font-cjk);
+  font-weight: 700;
+  font-size: clamp(1.7rem, 3vw, 2.35rem);
+  letter-spacing: 0.01em;
+  line-height: 1.25;
+}
+
+html[lang="en"] .section-head h2,
+html[lang="en"] .voice-copy h2,
+html[lang="en"] .download-panel h2 {
+  font-family: var(--font-latin-display);
   letter-spacing: -0.03em;
   line-height: 1.15;
 }
@@ -270,6 +345,7 @@ main,
 .voice-copy > p {
   margin: 0;
   color: var(--ink-soft);
+  font-family: var(--font-cjk);
 }
 
 .pillars {
@@ -289,13 +365,19 @@ main,
 .pillars h3 {
   margin: 0 0 0.5rem;
   font-size: 1.05rem;
-  font-family: var(--font-display);
+  font-family: var(--font-cjk);
+  font-weight: 700;
+}
+
+html[lang="en"] .pillars h3 {
+  font-family: var(--font-latin-display);
 }
 
 .pillars p {
   margin: 0;
   font-size: 0.92rem;
   color: var(--ink-soft);
+  font-family: var(--font-cjk);
 }
 
 .key-groups {
@@ -326,6 +408,7 @@ main,
   text-transform: uppercase;
   color: var(--muted);
   font-weight: 700;
+  font-family: var(--font-cjk);
 }
 
 .key-list {
@@ -363,11 +446,13 @@ main,
   gap: 0.55rem;
   font-weight: 600;
   margin-bottom: 0.25rem;
+  font-family: var(--font-cjk);
 }
 
 .key-desc {
   color: var(--ink-soft);
   font-size: 0.95rem;
+  font-family: var(--font-cjk);
 }
 
 .chip {
@@ -380,6 +465,7 @@ main,
   letter-spacing: 0.02em;
   background: rgba(20, 32, 28, 0.08);
   color: var(--ink);
+  font-family: var(--font-latin-display);
 }
 
 .chip-knob,
@@ -403,6 +489,7 @@ main,
   margin: 1rem 0 0;
   font-size: 0.85rem;
   color: var(--muted);
+  font-family: var(--font-cjk);
 }
 
 .voice {
@@ -443,6 +530,7 @@ main,
   margin: 1.35rem 0 0;
   padding-left: 1.2rem;
   color: rgba(244, 241, 234, 0.88);
+  font-family: var(--font-cjk);
 }
 
 .steps li {
@@ -466,8 +554,9 @@ main,
 
 .voice-card h3 {
   margin: 0 0 1rem;
-  font-family: var(--font-display);
+  font-family: var(--font-cjk);
   font-size: 1.15rem;
+  font-weight: 700;
 }
 
 .compare {
@@ -494,18 +583,21 @@ main,
   text-transform: uppercase;
   margin-bottom: 0.35rem;
   color: #f4a261;
+  font-family: var(--font-cjk);
 }
 
 .compare p {
   margin: 0;
   font-size: 0.9rem;
   color: rgba(244, 241, 234, 0.86);
+  font-family: var(--font-cjk);
 }
 
 .aside-note {
   margin: 1rem 0 0;
   font-size: 0.82rem;
   color: rgba(244, 241, 234, 0.65);
+  font-family: var(--font-cjk);
 }
 
 .howto {
@@ -531,7 +623,7 @@ main,
   position: absolute;
   left: 1.1rem;
   top: 1.2rem;
-  font-family: var(--font-display);
+  font-family: var(--font-latin-display);
   font-weight: 800;
   color: var(--accent);
 }
@@ -539,13 +631,15 @@ main,
 .howto strong {
   display: block;
   margin-bottom: 0.25rem;
-  font-family: var(--font-display);
+  font-family: var(--font-cjk);
   font-size: 1.05rem;
+  font-weight: 700;
 }
 
 .howto p {
   margin: 0;
   color: var(--ink-soft);
+  font-family: var(--font-cjk);
 }
 
 .howto a {
@@ -572,6 +666,7 @@ main,
   max-width: 36rem;
   margin: 0 auto 1.5rem;
   color: var(--ink-soft);
+  font-family: var(--font-cjk);
 }
 
 .download-panel .cta-row {
@@ -592,6 +687,7 @@ main,
   justify-content: space-between;
   gap: 1rem;
   flex-wrap: wrap;
+  font-family: var(--font-cjk);
 }
 
 .footer a {
@@ -625,9 +721,15 @@ main,
   .nav-links a:not(.nav-cta) {
     display: none;
   }
+}
 
+@media (max-width: 640px) {
   .key-list.compact {
     grid-template-columns: 1fr;
+  }
+
+  .lang-switch button {
+    padding: 0.35rem 0.45rem;
   }
 }
 
