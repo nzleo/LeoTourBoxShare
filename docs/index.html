@@ -21,6 +21,7 @@
           <a href="#keys" data-i18n="nav.keys">键位</a>
           <a href="#voice" data-i18n="nav.voice">语音键</a>
           <a href="#tune" data-i18n="nav.tune">微调</a>
+          <a href="#series" data-i18n="nav.series">其他作品</a>
           <a class="nav-cta" href="#download" data-i18n="nav.download">下载预设</a>
         </nav>
         <div class="lang-switch" role="group" aria-label="Language">
@@ -162,11 +163,34 @@
         <p class="meta" data-i18n="download.meta">版本 1.0.0 · 2026/08/07 · 已通过 TourBox 官方审核</p>
       </div>
     </section>
+
+    <section class="series" id="series">
+      <div class="series-head">
+        <h2 data-i18n="series.title">Leo 开源系列</h2>
+        <p data-i18n="series.desc">同一作者维护的开源小工具与工作流分享。页面风格统一，方便互相找到。</p>
+      </div>
+      <div class="series-grid">
+        <div class="series-card current">
+          <p class="series-kicker" data-i18n="series.current">当前页面</p>
+          <h3>TourBox × ChatGPT / Codex</h3>
+          <p data-i18n="series.tourboxDesc">TourBox 键位预设分享：模型、推理强度、活跃任务、审批与全局语音一手搞定。</p>
+        </div>
+        <a class="series-card" href="https://nzleo.github.io/LeoMacFanControl/" target="_blank" rel="noopener">
+          <p class="series-kicker" data-i18n="series.other">其他作品</p>
+          <h3 data-i18n="series.fanTitle">Leo 风扇控制</h3>
+          <p data-i18n="series.fanDesc">macOS 菜单栏温控，按 CPU 温度自动调速或闭环稳温，开源免费。</p>
+        </a>
+      </div>
+    </section>
   </main>
 
   <footer class="footer">
     <p data-i18n="footer.copy">TourBox 是 TourBox Tech Inc. 的产品商标。本页为社区分享说明，非官方站点。</p>
-    <p><a href="https://github.com/nzleo/LeoTourBoxShare">GitHub</a></p>
+    <div class="footer-links">
+      <a href="https://github.com/nzleo/LeoTourBoxShare" data-i18n="footer.repo">GitHub</a>
+      <a href="https://nzleo.github.io/LeoMacFanControl/" data-i18n="footer.fan">Leo 风扇控制</a>
+      <a href="https://github.com/nzleo" data-i18n="footer.author">作者 GitHub</a>
+    </div>
   </footer>
 
   <script src="i18n.js"></script>

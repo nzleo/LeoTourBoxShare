@@ -2,6 +2,8 @@
 
 TourBox `.tb` 预设归档。按**应用**和**版本**存放，可随使用习惯迭代更新。
 
+同一作者的其他开源 → [Leo 风扇控制](https://nzleo.github.io/LeoMacFanControl/)
+
 - 介绍页：https://nzleo.github.io/LeoTourBoxShare/
 - 官方下载：[TourBox Preset](https://www.tourboxtech.com/oap/presets/?presetShareId=1282502239801446400)
 

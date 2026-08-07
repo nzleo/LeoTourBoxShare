@@ -5,6 +5,7 @@ const I18N = {
     "nav.keys": "键位",
     "nav.voice": "语音键",
     "nav.tune": "微调",
+    "nav.series": "其他作品",
     "nav.download": "下载预设",
     "hero.eyebrow": "官方已审核发布",
     "hero.lede": "把模型切换、推理强度、活跃任务、审批和语音输入收进左手，让 Codex 操作不断档。",
@@ -78,7 +79,17 @@ const I18N = {
     "download.ctaOfficial": "TourBox 官方预设页",
     "download.ctaFile": "下载 ChatGPT_Codex.tb",
     "download.meta": "版本 1.0.0 · 2026/08/07 · 已通过 TourBox 官方审核",
-    "footer.copy": "TourBox 是 TourBox Tech Inc. 的产品商标。本页为社区分享说明，非官方站点。"
+    "series.title": "Leo 开源系列",
+    "series.desc": "同一作者维护的开源小工具与工作流分享。页面风格统一，方便互相找到。",
+    "series.current": "当前页面",
+    "series.other": "其他作品",
+    "series.tourboxDesc": "TourBox 键位预设分享：模型、推理强度、活跃任务、审批与全局语音一手搞定。",
+    "series.fanTitle": "Leo 风扇控制",
+    "series.fanDesc": "macOS 菜单栏温控，按 CPU 温度自动调速或闭环稳温，开源免费。",
+    "footer.copy": "TourBox 是 TourBox Tech Inc. 的产品商标。本页为社区分享说明，非官方站点。",
+    "footer.repo": "GitHub",
+    "footer.fan": "Leo 风扇控制",
+    "footer.author": "作者 GitHub"
   },
   en: {
     "meta.title": "TourBox × ChatGPT / Codex Preset",
@@ -86,6 +97,7 @@ const I18N = {
     "nav.keys": "Keys",
     "nav.voice": "Voice key",
     "nav.tune": "Tune",
+    "nav.series": "More work",
     "nav.download": "Download",
     "hero.eyebrow": "Officially approved & published",
     "hero.lede": "Keep model switching, reasoning effort, active tasks, approvals, and voice under your left hand — so Codex never loses momentum.",
@@ -159,7 +171,17 @@ const I18N = {
     "download.ctaOfficial": "TourBox official preset page",
     "download.ctaFile": "Download ChatGPT_Codex.tb",
     "download.meta": "v1.0.0 · 2026/08/07 · Approved by TourBox",
-    "footer.copy": "TourBox is a trademark of TourBox Tech Inc. Community guide, not an official site."
+    "series.title": "Leo Open Source Series",
+    "series.desc": "Open tools and workflow shares by the same author — matching page style so you can find them easily.",
+    "series.current": "This page",
+    "series.other": "More work",
+    "series.tourboxDesc": "TourBox preset share: models, reasoning effort, active tasks, approvals, and global voice in one hand.",
+    "series.fanTitle": "Leo Fan Control",
+    "series.fanDesc": "macOS menu-bar thermal control — auto fan curves or closed-loop target temps. Free and open source.",
+    "footer.copy": "TourBox is a trademark of TourBox Tech Inc. Community guide, not an official site.",
+    "footer.repo": "GitHub",
+    "footer.fan": "Leo Fan Control",
+    "footer.author": "Author on GitHub"
   },
   ja: {
     "meta.title": "TourBox × ChatGPT / Codex プリセット",
@@ -167,6 +189,7 @@ const I18N = {
     "nav.keys": "キー配置",
     "nav.voice": "音声キー",
     "nav.tune": "調整",
+    "nav.series": "他の作品",
     "nav.download": "ダウンロード",
     "hero.eyebrow": "公式審査通過・公開済み",
     "hero.lede": "モデル切替・推論強度・アクティブタスク・承認・音声入力を左手に集約し、Codex の操作を途切れさせない。",
@@ -240,7 +263,17 @@ const I18N = {
     "download.ctaOfficial": "TourBox 公式プリセット",
     "download.ctaFile": "ChatGPT_Codex.tb をダウンロード",
     "download.meta": "v1.0.0 · 2026/08/07 · 公式審査通過",
-    "footer.copy": "TourBox は TourBox Tech Inc. の商標です。本ページはコミュニティ解説です。"
+    "series.title": "Leo オープンソースシリーズ",
+    "series.desc": "同一作者によるオープンソースの小ツールとワークフロー共有。ページスタイルを揃え、互いに見つけやすくしています。",
+    "series.current": "このページ",
+    "series.other": "他の作品",
+    "series.tourboxDesc": "TourBox プリセット共有：モデル・推論強度・アクティブタスク・承認・グローバル音声を一手に。",
+    "series.fanTitle": "Leo ファン制御",
+    "series.fanDesc": "macOS メニューバー温控。CPU 温度に応じた自動調速または閉ループ安定化。無料オープンソース。",
+    "footer.copy": "TourBox は TourBox Tech Inc. の商標です。本ページはコミュニティ解説です。",
+    "footer.repo": "GitHub",
+    "footer.fan": "Leo ファン制御",
+    "footer.author": "作者の GitHub"
   }
 };
 
