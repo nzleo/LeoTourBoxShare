@@ -84,10 +84,12 @@ const I18N = {
     "series.current": "当前页面",
     "series.other": "其他作品",
     "series.tourboxDesc": "TourBox 键位预设分享：模型、推理强度、活跃任务、审批与全局语音一手搞定。",
+    "series.mdDesc": "轻量 macOS Markdown 阅读 / 编辑：双击打开，左侧目录，右侧正文。",
     "series.fanTitle": "Leo 风扇控制",
     "series.fanDesc": "macOS 菜单栏温控，按 CPU 温度自动调速或闭环稳温，开源免费。",
     "footer.copy": "TourBox 是 TourBox Tech Inc. 的产品商标。本页为社区分享说明，非官方站点。",
     "footer.repo": "GitHub",
+    "footer.md": "LeoMDReader",
     "footer.fan": "Leo 风扇控制",
     "footer.author": "作者 GitHub"
   },
@@ -176,10 +178,12 @@ const I18N = {
     "series.current": "This page",
     "series.other": "More work",
     "series.tourboxDesc": "TourBox preset share: models, reasoning effort, active tasks, approvals, and global voice in one hand.",
+    "series.mdDesc": "Lightweight macOS Markdown reader/editor: double-click open, outline left, content right.",
     "series.fanTitle": "Leo Fan Control",
     "series.fanDesc": "macOS menu-bar thermal control — auto fan curves or closed-loop target temps. Free and open source.",
     "footer.copy": "TourBox is a trademark of TourBox Tech Inc. Community guide, not an official site.",
     "footer.repo": "GitHub",
+    "footer.md": "LeoMDReader",
     "footer.fan": "Leo Fan Control",
     "footer.author": "Author on GitHub"
   },
@@ -268,10 +272,12 @@ const I18N = {
     "series.current": "このページ",
     "series.other": "他の作品",
     "series.tourboxDesc": "TourBox プリセット共有：モデル・推論強度・アクティブタスク・承認・グローバル音声を一手に。",
+    "series.mdDesc": "軽量 macOS Markdown リーダー / エディタ。ダブルクリックで開き、左目次・右本文。",
     "series.fanTitle": "Leo ファン制御",
     "series.fanDesc": "macOS メニューバー温控。CPU 温度に応じた自動調速または閉ループ安定化。無料オープンソース。",
     "footer.copy": "TourBox は TourBox Tech Inc. の商標です。本ページはコミュニティ解説です。",
     "footer.repo": "GitHub",
+    "footer.md": "LeoMDReader",
     "footer.fan": "Leo ファン制御",
     "footer.author": "作者の GitHub"
   }
