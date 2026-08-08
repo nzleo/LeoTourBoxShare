@@ -7,6 +7,14 @@ TourBox `.tb` 预设归档。按**应用**和**版本**存放，可随使用习�
 - 介绍页：https://nzleo.github.io/LeoTourBoxShare/
 - 官方下载：[TourBox Preset](https://www.tourboxtech.com/oap/presets/?presetShareId=1282502239801446400)
 
+## Leo 开源系列
+
+| 项目 | 说明 |
+| --- | --- |
+| [TourBox × ChatGPT / Codex](https://nzleo.github.io/LeoTourBoxShare/) | TourBox 键位预设分享（本仓库） |
+| [LeoMDReader](https://nzleo.github.io/LeoMDReader/) | 轻量 Markdown 阅读 / 编辑 |
+| [Leo 风扇控制](https://nzleo.github.io/LeoMacFanControl/) | macOS 菜单栏温控 |
+
 ## 目录结构
 
 ```text
