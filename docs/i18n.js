@@ -80,7 +80,7 @@ const I18N = {
     "download.ctaFile": "下载 ChatGPT_Codex.tb",
     "download.meta": "版本 1.0.0 · 2026/08/07 · 已通过 TourBox 官方审核",
     "series.title": "Leo 开源系列",
-    "series.desc": "看看我的其他作品。",
+    "series.desc": "看看我的其他开源项目。",
     "series.current": "当前页面",
     "series.other": "其他作品",
     "series.tourboxDesc": "左手工作流预设：模型、推理、任务、审批与全局语音；已通过 TourBox 官方审核。",
