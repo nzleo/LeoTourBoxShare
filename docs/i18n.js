@@ -87,10 +87,12 @@ const I18N = {
     "series.mdDesc": "轻量 Markdown：双击打开就能看；左目录右正文，可编辑；不臃肿、不收费墙。",
     "series.fanTitle": "Leo 风扇控制",
     "series.fanDesc": "菜单栏温控：真实让风扇转起来；零网络、可审计、开源免费。",
+    "series.launcherDesc": "空间分区启动器：⌥ Space 呼出；系统 Launchpad 不好用才做的。一个应用一个分类，布局随 iCloud。开源，可下 DMG。",
     "footer.copy": "TourBox 是 TourBox Tech Inc. 的产品商标。本页为社区分享说明，非官方站点。",
     "footer.repo": "GitHub",
     "footer.md": "LeoMDReader",
     "footer.fan": "Leo 风扇控制",
+    "footer.launcher": "LeoLauncher",
     "footer.author": "作者 GitHub"
   },
   en: {
@@ -181,10 +183,12 @@ const I18N = {
     "series.mdDesc": "Lightweight Markdown: double-click to read; outline left, content right; editable; no bloat, no paywall.",
     "series.fanTitle": "Leo Fan Control",
     "series.fanDesc": "Menu-bar thermal control that actually spins the fans — zero network, auditable, free.",
+    "series.launcherDesc": "Spatial launcher: ⌥ Space to open. Built because system Launchpad got hard to use. One app per category, layout follows iCloud. Open source, DMG available.",
     "footer.copy": "TourBox is a trademark of TourBox Tech Inc. Community guide, not an official site.",
     "footer.repo": "GitHub",
     "footer.md": "LeoMDReader",
     "footer.fan": "Leo Fan Control",
+    "footer.launcher": "LeoLauncher",
     "footer.author": "Author on GitHub"
   },
   ja: {
@@ -275,10 +279,12 @@ const I18N = {
     "series.mdDesc": "軽量 Markdown。ダブルクリックで開く。左目次・右本文、編集可。肥大化も課金壁もなし。",
     "series.fanTitle": "Leo ファン制御",
     "series.fanDesc": "メニューバー温控。本当にファンを回す。ゼロネットワーク・監査可能・無料。",
+    "series.launcherDesc": "空間ランチャー。⌥ Space で呼び出し。システムの Launchpad が使いにくくなったから作った。1アプリ1分類、レイアウトは iCloud。オープンソース、DMG あり。",
     "footer.copy": "TourBox は TourBox Tech Inc. の商標です。本ページはコミュニティ解説です。",
     "footer.repo": "GitHub",
     "footer.md": "LeoMDReader",
     "footer.fan": "Leo ファン制御",
+    "footer.launcher": "LeoLauncher",
     "footer.author": "作者の GitHub"
   }
 };
